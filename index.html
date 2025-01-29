@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div class="profile-card" data-testid="profile-card">
+      <!-- Profile Picture -->
+      <div class="profile-image" data-testid="profilePicture">
+        <img
+          src="./assets/images/DSC_crop.jpg"
+          alt="Profile Image"
+          data-testid="profilePicture-img"
+        />
+      </div>
+      <div class="profile-info" data-testid="profile-info">
+        <!-- Full Name -->
+        <h2 data-testid="fullName">Akinyemi Emmanuel</h2>
+        <!-- Job Title -->
+        <p class="bio" data-testid="jobTitle">
+          Web Developer | Tech Enthusiast | Guitar Lover
+        </p>
+        <!-- Short Bio -->
+        <p class="short-bio" data-testid="shortBio">
+          Passionate about coding and building impactful software solutions,
+          while enjoying life’s small joys like music and travels.
+        </p>
+
+        <ul class="details" data-testid="socialLinks">
+          <!-- Email Address -->
+          <li data-testid="emailAddress">
+            <strong>Email:</strong> emizlife2014@gmail.com
+          </li>
+          <!-- Current Location -->
+          <li data-testid="currentLocation">
+            <strong>Location:</strong> Port-Harcourt, Nigeria
+          </li>
+          <!-- LinkedIn -->
+          <li>
+            <strong>LinkedIn:</strong>
+            <a
+              href="https://www.linkedin.com/in/emmanuelakinyemidev/"
+              target="_blank"
+              data-testid="profile-linkedin-url"
+              >LinkedIn Profile</a
+            >
+          </li>
+        </ul>
+
+        <!-- Current UTC Time -->
+        <p data-testid="currentTimeUTC" id="current-time"></p>
+      </div>
+    </div>
+  </body> 
+  <script src="./js/scripts.js"></script> 
+</html>
